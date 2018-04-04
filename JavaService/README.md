@@ -8,5 +8,5 @@ This represents a basic Java Service (Eureka Client) that prints the payload of 
 
 ```sh
 $ mvn clean package
-$ java -jar target/JavaService.${version}.jar 
+$ java -jar target/JavaService-0.0.1-SNAPSHOT.jar 
 ```
