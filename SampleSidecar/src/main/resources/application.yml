@@ -1,0 +1,19 @@
+info:
+  status: OK
+  
+spring:
+  application:
+    name: SampleSidecar  
+  
+server:
+  port: 8082
+  
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+    non-secure-port: 8182
+  client:
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
