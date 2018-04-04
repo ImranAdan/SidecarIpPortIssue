@@ -14,3 +14,10 @@ When the sidecar instance is registered it registers using the hostname and the 
 
 The question becomes, why is it when sidecar is added as a dependency the eureka client ignores the  prefer-ip-address and the non-secure-port configuration? 
 
+*You may run all the project as is; all configurations are provided in sample projects*
+
+To reporduce: 
+
+ - Run Eureka
+ - Run Java Service (note the IP Address and the non-secure port)
+ - Run Sample Sidecar (note Hostname and server port are advertised to Eureka and NOT THE IP ADDRESS & NON-SECURE PORT)
